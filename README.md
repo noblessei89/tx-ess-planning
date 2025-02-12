@@ -7,18 +7,20 @@ The data repository for Energy Storage planning offers a comprehensive collectio
 ![image](https://github.com/user-attachments/assets/e44aa0dd-e37e-4237-9a45-7ebbee6c4d68)
 
 ### 1. Locational Marginal Prices (`LMPs`) for ERCOT Nodes
-- **Data Coverage**: Historical LMP data for all ERCOT nodes, spanning from 2010 to 2022.
+- **Data Coverage**: Historical LMP data for ERCOT nodes, spanning from 2010 to 2022.
 - **Resolution**: Prices are available at a 5-minute interval resolution, facilitating granular temporal analysis.
-- **Data Structure**: Organized by node and year, each day is represented by a unique column with 5-minute intervals over 24 hours represented in 288 rows.
-- **Access**: The data democratizes access to long-term ERCOT LMP data, which can be challenging to obtain.
+- **Data Structure**: Data is organized by node and year. Each day is represented as a unique column, with 288 rows corresponding to 5-minute intervals over 24 hours.
+- **Access**: This dataset democratizes access to long-term ERCOT LMP data, which is otherwise challenging to obtain.
 
-### 2. Geographic Locations of ERCOT Nodes
-- **Mapping**: Locational data of ERCOT nodes has been extracted and mapped onto a 600-by-600-pixel representation of Texas.
-- **Visualization**: The map and conversion tools provided in this repository enable spatially accurate visualizations, such as those comparing locational marginal prices over time.
+### 2. Estimated Geographic Locations of ERCOT Nodes
+- **Mapping**: Geographic data derived from ERCOT's Real-Time Locational Prices map.
+- **Visualization**: The provided map and conversion tools enable spatial visualizations, such as comparing LMPs over time.
+- **Important**: All geographic information represents only relative positioning on a 600×600 pixel map of Texas for visualization purposes, rather than actual coordinates, and should not be considered accurate. The data were estimated from ERCOT's Real-Time Locational Prices Map, and no details about the actual node locations are available.
 
-### 3. Locations of Renewable Energy and ESS Sites
-- **Coverage**: Includes the geographic locations of solar farms, wind power facilities, and ESS installations across Texas.
-- **Support for Spatial Analysis**: The coordinates provided for each installation allow for precise spatial analysis and mapping, aiding in identifying synergies in energy generation and storage.
+### 3. Estimated Locations of Renewable Energy and ESS Sites
+- **Coverage**: Includes the estimated geographic locations of solar farms, wind power facilities, and ESS installations across Texas.
+- **Support for Spatial Analysis**: The relative coordinates provided for each installation allow for precise spatial analysis and mapping, aiding in identifying synergies in energy generation and storage.
+- **Important**: All geographic information represents only relative positioning on a 600×600 pixel map of Texas for visualization purposes, rather than actual coordinates, and should not be considered accurate.
 
 ## Navigation
 This repository mainly contains three components: source data, released data, and plotting code. We navigate this data repository as follows:
